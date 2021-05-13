@@ -1,14 +1,17 @@
+/* Whole Page formatting */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Body has offwhite background color */
 body {
     background-color: #d9dcd6;
 }
 
 /* removed header class to use header semantic class instead*/
+/* Header formatting */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -16,15 +19,18 @@ header {
     color: #ffffff;
 }
  
+/* Header is an inline-block object */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* the "SEO" part of Horiseon is a different color */
 header h1 .seo {
     color: #d9dcd6;
 }
 
+/* Navigation bar formatting */
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -38,21 +44,25 @@ header nav ul {
     list-style-type: none;
 }
 
+/* Each listed item in the navigation bar uses these settings */
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* linked text has white color */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* paragraph settings */
 p {
     font-size: 16px;
 }
 
 /* removed footer class to use footer semantic tag instead*/
+/* Footer settings */
 footer {
     padding: 30px;
     clear: both;
@@ -60,10 +70,12 @@ footer {
     text-align: center;
 }
 
+/* footer heading font size */
 footer h2 {
     font-size: 20px;
 }
 
+/* Background Image settings */
 .hero {
     height: 800px;
     width: 100%;
@@ -73,23 +85,53 @@ footer h2 {
     background-position: center;
 }
 
+/* image position settings */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* image position settings */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* Content Section formatting */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* consolidated all the sections in the content section to use the same settings */
+/* content section's subsection formatting */
+.infosection {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* consolidated all images in content sections to have the same size */
+/* content section's images formatting */
+.content img {
+    max-height: 200px;
+}
+
+
+/* consolidated all headers in content sections to have the same size */
+/* content section's headers formatting */
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+
 /* consolidated all font settings from the benefits section to apply to whole class instead of individual elements */
+/* Benefits section formatting */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -104,6 +146,7 @@ footer h2 {
 }
 
 /* consolidated all the headers in the benefits section to the same size */
+/* Benefits section's headers formatting */
 .benefits h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -111,33 +154,9 @@ footer h2 {
 
 
 /* consolidated all images in the benefits section to have the same settings */
+/* Benefits section's image formatting  */
 .benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
-
-/* consolidated all the sections in the content section to use the same settings */
-.infosection {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-
-/* consolidated all images in content sections to have the same size */
-.content img {
-    max-height: 200px;
-}
-
-
-/* consolidated all headers in content sections to have the same size */
-.content h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
